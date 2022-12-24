@@ -1,0 +1,159 @@
+@import 'antd/dist/antd.css';
+
+.pdc-main {
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.txt-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-input-search {
+    position: relative;
+}
+
+.input-search {
+    width: 100%;
+    border: 0;
+    height: 40px;
+    background-color: #EAEAEA;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.icon-search {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.table {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.table thead {
+    background-color: #333366;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.paginate {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-filter {
+    display: flex;
+}
+
+.ant-collapse.ant-collapse-icon-position-start.box-collapse {
+    width: 220px;
+}
+
+.ant-collapse.ant-collapse-icon-position-start.box-collapse {
+    border: 0;
+    border-radius: 5px;
+    background-color: #FCCB06;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    padding: 5px;
+}
+
+.ant-collapse > .ant-collapse-item {
+    border: 0;
+}
+
+.ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    border-radius: 5px;
+}
+
+span.ant-collapse-header-text {
+    margin-top: 2px;
+}
+
+.ant-collapse-content {
+    position: absolute;
+    border: 0;
+    margin-top: 10px;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+    width: 220px;
+    padding: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 rgba(48, 48, 48, 0.507);
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg {
+    margin-left: 5px;
+    margin-top: -3px;
+}
+
+.filter-title {
+    transition: 0.05s;
+}
+
+.filter-title:hover {
+    background-color: #333366;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.05s;
+}
+
+.not-found-alert {
+    background-color: #EDEDED;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 950px) {
+
+    .pdc-main {
+        padding: 30px 50px;
+        width: 100%;
+    }
+
+    .flex {
+        display: unset;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .table-product {
+        width: 1000px;
+    }
+
+    .scroll-product {
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+
+    .ant-collapse.ant-collapse-icon-position-start.box-collapse {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .ant-collapse-content > .ant-collapse-content-box {
+        width: 100%
+    }
+
+}
+

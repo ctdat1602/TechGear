@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(24, 23, 23) 0%, rgb(32, 32, 51) 35%, rgba(51, 51, 102) 100%);
+}
+
+.box div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 6px solid white;
+}
+
+.box div:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(2) {
+    top: 20%;
+    left: 35%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 80%;
+    left: 45%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 40%;
+    left: 15%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 70%;
+    left: 5%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 60%;
+    left: 30%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 40%;
+    left: -3%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 50%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 100%;
+    left: 22%;
+    animation: animate 11s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 10%;
+    left: 90%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(11) {
+    top: 30%;
+    left: 58%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(12) {
+    top: 70%;
+    left: 85%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(13) {
+    top: 40%;
+    left: 75%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(14) {
+    top: 70%;
+    left: 65%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(15) {
+    top: 5%;
+    left: 48%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(16) {
+    top: 50%;
+    left: 97%;
+    animation: animate 10s linear infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.first-login img {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+.first-login p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4B4B4B;
+    user-select: none;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-top: 30px;
+    outline: none;
+    transition: 0.25s ease;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.form-input label {
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    font-size: 12px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+    transition: 0.25s ease;
+    font-weight: 500;
+}
+
+.form-input .erro {
+    position: absolute;
+    right: 20px;
+    top: 60%;
+    user-select: none;
+    color: #FF4A4A;
+    transition: 0.25s ease;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.form-input .success {
+    font-size: 25px;
+    color: #55d38a;
+    position: absolute;
+    right: 20px;
+    top: 52%;
+    user-select: none;
+    transition: 0.25s ease;
+}
+
+.form-input input:focus {
+    border: solid 1px #4a4a91;
+}
+
+.form-input input:not(:placeholder-shown)+label,
+.form-input input:focus+label {
+    top: 18px;
+    left: 10;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    background-color: white;
+    color: #4a4a91;
+    font-weight: 500;
+}
+
+.last-login .checkbox {
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+    accent-color: #333366;
+    float: left;
+
+}
+
+.last-login p {
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-weight: 500;
+    color: #4B4B4B;
+    user-select: none;
+}
+
+.last-login button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #333366;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    outline: none;
+    transition: ease-in-out 0.4s;
+    box-shadow: inset 0 0 0 0 #FCCB06;
+}
+
+.last-login button:hover {
+    background-color: #FCCB06;
+    box-shadow: inset 0 0 10px 0 #FCCB06;
+    color: #4B4B4B;
+}
+
+.link {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333366;
+    font-weight: 500;
+}
+
+.link a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+
+.link a:hover {
+    font-size: 16px;
+    color: #333366;
+}
+
+@media screen and (max-width: 1650px) {
+    .main {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/product.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li>
+                    <a href="/home">
+                        <span class="icon">
+                            <ion-icon name="home"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/product">
+                        <span class="icon">
+                            <ion-icon name="hardware-chip"></ion-icon>
+                        </span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/order">
+                        <span class="icon">
+                            <ion-icon name="archive"></ion-icon>
+                        </span>
+                        <span class="title">Order</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/customers">
+                        <span class="icon">
+                            <ion-icon name="earth"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/newspaper">
+                        <span class="icon">
+                            <ion-icon name="reader"></ion-icon>
+                        </span>
+                        <span class="title">Newpages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/profile">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="log-out"></ion-icon>
+                        </span>
+                        <span class="title">Log out</span>
+                    </a>
+                </li>
+
+            </ul>
+        </header>
+
+        <article>
+            <form action="/product">
+                <h1>Products</h1>
+                <div class="nav">
+                    <div>
+                        <input type="text" name="name" type="search" placeholder="Search by name">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                    <a href="/productAdd" class="link">ADD</i></a>
+                </div>
+
+                <div class="table-main">
+                    <table>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name / brand</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        {{#each product}}
+                        <tr onclick="editProduct('{{this._id}}')">
+                            <td><img src="{{this.image}}"></td>
+                            <td>
+                                <p>{{ this.name }}</p>
+                                <p class="text-mini">{{this.brandId.name}}</p>
+                            </td>
+                            <td>{{ this.price }} VND</td>
+                            <td>{{ this.quantity }}</td>
+                        </tr>
+                        {{/each}}
+                    </table>
+                </div>
+            </form>
+        </article>
+    </div>
+    <script src="javascripts/navigation.js"></script>
+    <script src="javascripts/update.js"></script>
+
+</body>
+
+</html>

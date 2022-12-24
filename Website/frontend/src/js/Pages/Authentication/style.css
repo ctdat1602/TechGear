@@ -1,0 +1,180 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.ctn-auth {
+    height: 100vh;
+    background-image: linear-gradient(to right, #6441A5, #333366);
+    background-size: cover;
+}
+
+.main-auth {
+    width: 80%;
+    height: 750px;
+    background: #23233d;
+    box-shadow: 0 0 10px 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.main-auth .csl-main {
+    height: 100%;
+    width: 100%;
+}
+
+.csl-main img {
+    height: 710px;
+    border-radius: 10px;
+}
+
+.loign-box-control {
+    position: relative;
+    isolation: isolate;
+
+}
+
+.loign-box-control::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #fffdfd;
+    opacity: .3;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/276/740/original/seamless-pattern-with-gaming-equipment-six-items-on-gray-background-headphones-flash-drive-mouse-pc-gamepad-tablet-vector.jpg');
+    background-size: cover;
+}
+
+.loign-box-control .txt-welcome {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    margin-top: 70px;
+}
+
+.loign-box-control .txt-note {
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.loign-box-control .input-box {
+    margin-bottom: 30px;
+}
+
+.input-box label {
+    color: white;
+    font-weight: bold;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+}
+
+.loign-box-control button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #333366;
+    border-width: 0;
+    color: white;
+    font-weight: bold;
+    transition: ease-in-out 0.4s;
+    box-shadow: inset 0 0 0 0 #FCCB06;
+}
+
+.loign-box-control button:hover {
+    background-color: #FCCB06;
+    box-shadow: inset 0 0 10px 0 #FCCB06;
+    color: #4B4B4B;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    .main-auth {
+        width: 100%;
+        height: 100%;
+    }
+
+    .csl-main img {
+        height: 880px;
+        border-radius: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .ctn-auth {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .main-auth {
+        width: 100%;
+    height: 100vh;
+    background: #23233d;
+    box-shadow: 0 0 10px 1px black;
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    }
+
+    .loign-box-control::after {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .csl-main img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        visibility: hidden;
+        position: absolute;
+       
+    }
+
+    .carousel-indicators {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .csl-main.carousel.slide.carousel-fade {
+        position: absolute;
+    }
+
+    .loign-box-control {
+        position: unset;
+       
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+@import 'antd/dist/antd.css';
+
+.pdc-main {
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.txt-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-input-search {
+    position: relative;
+}
+
+.input-search {
+    width: 100%;
+    border: 0;
+    height: 40px;
+    background-color: #EAEAEA;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.icon-search {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.table {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.table thead {
+    background-color: #333366;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.paginate {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.wating-button {
+    padding: 0px 10px;
+    border: 0;
+    background-color: #F7A76C;
+    color: white;
+    border-radius: 5px;
+}
+
+.confirmed-button 
+{
+    padding: 0px 10px;
+    border: 0;
+    background-color: #57CC99;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 950px) {
+
+    .pdc-main {
+        padding: 30px 50px;
+        width: 100%;
+    }
+    
+    .flex {
+        display: unset;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .scroll .table {
+        width: 850px;
+    }
+
+    .scroll {
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+
+}

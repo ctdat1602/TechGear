@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/newpagerEdit.css"
+</head>
+
+<body>
+    <form role="form" method="post" action="/newspaper" enctype="multipart/form-data">
+       <div class="container">
+
+            <div class="main">
+                <label class="label-title">Newspager /</label>
+                <label class="label-link">Update</label>
+                <button id="submit" type="submit">Update</button>
+                <div class="left">
+                    <div><img id="image-view" src="{{newspaper.image}}" name="image"></div>
+                    <input type="file" name="image" id="image-file" onchange="onChangeFile()">
+                    <label for="image-file" onchange="onChangeFile()">
+                        <i class='bx bxs-image-add'></i>
+                        Choose A Photo
+                    </label>
+                </div>
+
+                <div class="right">
+                    <p>Title</p>
+                    <input id="name" placeholder="Name" type="text" name="name" value="{{newspaper.name}}">
+                    <p>Date</p>
+                    <input type="date" name="date" id="date" value="{{newspaper.date}}">
+                    <p>Descriptions</p>
+                    <textarea name="descriptions" id="descriptions" cols="30"
+                        rows="10">{{newspaper.descriptions}}</textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+     <script language="javascript" src="javascripts/function.js"></script>
+</body>
+
+</html>

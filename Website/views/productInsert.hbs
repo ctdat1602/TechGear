@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/newpagerEdit.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form role="form" method="post" action="/product" enctype="multipart/form-data">
+        <div class="container">
+
+            <div class="main">
+                <label class="label-title">Product /</label>
+                <label class="label-link">Insert</label>
+                <button id="submit" type="submit">ADD</button>
+                <div class="left">
+                    <div><img id="image-view" src="{{newspaper.image}}" name="image"></div>
+                    <input type="file" name="image" id="image-file" onchange="onChangeFile()">
+                    <label for="image-file" onchange="onChangeFile()">
+                        <i class='bx bxs-image-add'></i>
+                        Choose A Photo
+                    </label>
+                </div>
+
+                <div class="right">
+                    <p>Product name</p>
+                    <input placeholder="Name" type="text" name="name" value="{{product.name}}">
+                    <p>Price</p>
+                    <input placeholder="Price" name="price" value="{{product.price}}">
+                    <p>Quantity</p>
+                    <input placeholder="Quantity" type="number" name="quantity" value="{{product.quantity}}">
+                    <p>Import date</p>
+                    <input placeholder="FirstDate" type="date" name="firstDate" value="{{product.firstDate}}">
+                    <p>Import time</p>
+                    <input placeholder="Time" type="time" name="time" value="{{product.time}}">
+                    <p>Warranty period</p>
+                    <input placeholder="Insurance" type="date" name="insurance" value="{{product.insurance}}">
+                    <p>Categories</p>
+                    <select name="categoryId" value="{{product.category.name}}">
+                        {{#each categories}}
+                        {{#if this.selected}}
+                        <option selected value="{{this._id}}">{{this.name}}</option>
+                        {{else}}
+                        <option value="{{this._id}}">{{this.name}}</option>
+                        {{/if}}
+                        {{/each}}
+                    </select>
+                    <p>Brands</p>
+                    <select name="brandId" value="{{product.brand.name}}">
+                        {{#each brand}}
+                        {{#if this.selected}}
+                        <option selected value="{{this._id}}">{{this.name}}</option>
+                        {{else}}
+                        <option value="{{this._id}}">{{this.name}}</option>
+                        {{/if}}
+                        {{/each}}
+                    </select>
+                    <p>Classifies</p>
+                    <select name="classifyId" value="{{product.classifyId.name}}">
+                        {{#each classify}}
+                        {{#if this.selected}}
+                        <option selected value="{{this._id}}">{{this.name}}</option>
+                        {{else}}
+                        <option value="{{this._id}}">{{this.name}}</option>
+                        {{/if}}
+                        {{/each}}
+                    </select>
+                    <p>Descriptions</p>
+                    <textarea name="descriptions" placeholder="Descriptions" id="descriptions" cols="30"
+                        rows="10">{{this.descriptions}}</textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script language="javascript" src="javascripts/function.js"></script>
+
+</body>
+
+</html>

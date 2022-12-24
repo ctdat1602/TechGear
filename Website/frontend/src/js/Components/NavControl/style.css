@@ -1,0 +1,169 @@
+.nav-container {
+    box-shadow: 0 0 10px 0 rgb(228, 228, 228);
+    width: 290px;
+    height: 100vh;
+    transition: 0.05s;
+}
+
+.nav-box-navbar {
+    transition: 0.5s;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.5s;
+}
+
+.nav-box-title {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-img-lg {
+    width: 66px;
+    height: 66px;
+}
+
+.nav-box-note {
+    margin-left: 10px;
+}
+
+.nav-txt-tg {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333366;
+}
+
+.nav-txt-note {
+    font-size: 11px;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+.nav-hr {
+    color: #333366;
+}
+
+.nav-link {
+    width: 100%;
+    font-size: 15px;
+    color: #B2B1B9;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.nav-icon {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.nav-add-from {
+    width: 100%;
+    height: 40px;
+    background-color: #FCCB06;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .nav-container {
+        width: 100px;
+    }
+
+    .nav-box-navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-box-note{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .nav-link {
+        padding: 20px;
+    }
+
+    .nav-link p{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .nav-icon {
+        font-size: 24px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .nav-container {
+        width: 100%;
+        height: 60px;
+    }
+
+    .nav-box-navbar {
+        padding: 0;
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .nav-img-lg {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .nav-hr {
+        visibility: hidden;
+        text-align: center;
+    }
+
+    .nav-router {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        margin-top: -8px;
+      
+    }
+
+    .nav-link {
+        padding: 0;
+        width: 30%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-icon {
+        display: flex;
+    }
+
+    .nav-add-from {
+        width: 30%;
+        margin: 0;
+        background-color: white;
+    }
+
+    .nav-icon-add {
+        background-color: #FCCB06;
+        border-radius: 5px;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+}
+

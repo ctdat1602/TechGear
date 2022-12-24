@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="background">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <form action="/login" method="post" role="form">
+
+    <div class="container">
+
+      <div class="main">
+
+        <div class="first-login">
+          <img src="images/logo.png">
+
+          <p>Chào mừng bạn đến với TechGear </br> Vui lòng đăng nhập bằng tài khoản quản trị viên</p>
+
+        </div>
+
+        <div class="last-login">
+
+          <div>
+            <div class="form-input">
+              <input type="text" placeholder=" " id="email" name="email" onkeyup="validateEmail()">
+              <label>Tài khoản</label>
+              <span id="email-error" class="erro"></span>
+              <span id="email-success" class="success"></span>
+            </div>
+
+            <div class="form-input">
+              <input type="password" placeholder=" " id="password" name="password" onkeyup="validatePassword()"
+                autocomplete="on">
+              <label>Mật khẩu</label>
+              <span id="password-error" class="erro"></span>
+              <span id="password-success" class="success"></span>
+            </div>
+          </div>
+
+          <div>
+            <input class="checkbox" type="checkbox" id="remember" value="rmbMe">
+            <p for="remember">Ghi nhớ đăng nhập</p>
+          </div>
+
+          <div>
+            <button type="submit" onclick="btnSubmit()" value="Login">Đăng nhập</button>
+          </div>
+
+          <div class="link">
+            <a>Quên mật khẩu ?</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+
+</body>
+
+  <script language="javascript" src="javascripts/function.js"></script>
+
+</html>

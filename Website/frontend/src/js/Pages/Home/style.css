@@ -1,0 +1,119 @@
+.view-statistical {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.view-chart {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    padding: 40px;
+    padding-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    box-sizing: border-box;
+}
+
+.view-statistical {
+    display: flex;
+}
+
+.apexcharts-zoom-icon, .apexcharts-reset-icon, .apexcharts-pan-icon {
+    visibility: hidden;
+    position: absolute;
+
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg{
+    stroke:rgb(194, 194, 194)
+}
+
+.view-revenue {
+    width: 30%;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.box-revenue {
+    width: 100%;
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.box-revenue-green {
+    width: 100%;
+    background-color: #6ECB63;
+    padding: 10px 30px;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    transition: all 0.5s;
+}
+
+.box-revenue-organe {
+    width: 100%;
+    background-color: #EF9A53;
+    padding: 10px 30px;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    transition: all 0.5s;
+}
+
+.box-revenue-red {
+    width: 100%;
+    background-color: #F96666;
+    padding: 10px 30px;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    transition: all 0.5s;
+}
+
+.month {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.price {
+    float: right;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.box-revenue-green:hover, .box-revenue-organe:hover, .box-revenue-red:hover {
+    padding: 10px 25px;
+    background-color: #333366;
+}
+
+.toolbar-revenue {
+    display: flex;
+}
+
+.dropdown-revenue.dropdown {
+    width: 40%;
+}
+
+/* button.dropdown-toggle.btn.btn-primary {
+    background-color: #FCCB06;
+    border: 0;
+    color: #4b4b4b;
+    font-weight: bold;
+} */
+
+.total-price-by-year {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: #333366;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 4px;
+    color: white;
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588681465384",
+    "project_id": "techgear-c0dda",
+    "storage_bucket": "techgear-c0dda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588681465384:android:c5f489659b1fb44709af1d",
+        "android_client_info": {
+          "package_name": "com.techgear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588681465384-6pqkeackcvqn4poaoe8t60nonj1erqlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnUzTvSaPhPZ6A0HSKuvynoSsFgQ3OMQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588681465384-6pqkeackcvqn4poaoe8t60nonj1erqlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

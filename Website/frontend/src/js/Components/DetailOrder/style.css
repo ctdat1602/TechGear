@@ -1,0 +1,167 @@
+.detail-box-input {
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 65px;
+    padding-bottom: 40px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.detail-box-input .box-infor {
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.detail-box-input .box-infor .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.detail-box-input .box-infor .status-1{
+    font-weight: 500;
+    color: #F7A76C;
+    margin-left: 10px;
+}
+
+.detail-box-input .box-infor .status-2{
+    font-weight: 500;
+    color: #57CC99;
+    margin-left: 10px;
+}
+
+.detail-box-input .box-infor .title-chirlden {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detail-box-input .box-infor .box-infor-chirlden {
+    margin-top: 5px;
+}
+.box-infor-chirlden .infor-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.box-infor-chirlden .infor {
+    float: right;
+    font-size: 16px;
+}
+
+.detail-box-input .box-mes {
+    width: 70%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(194, 194, 194);
+    box-sizing: border-box;
+}
+
+.btn-confirmed {
+    background-color: #333366;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.box-mes {
+    padding: 50px;
+}
+
+.box-mes .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.box-chirlden-mes {
+    margin-top: 20px;
+}
+
+.box-chirlden-mes input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3f3f3;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.box-chirlden-mes label{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.box-chirlden-mes textarea {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3f3f3;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.box-mes button{
+    background-color: #333366;
+    width: 100%;
+    height: 40px;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    color: white;
+} 
+
+
+@media screen and (max-width: 1300px) {
+
+    .detail-box-input .box-infor  {
+        width: 100%;
+    }
+
+    .detail-box-input .box-mes {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+
+    .detail-box-input {
+        display: unset;
+    }
+
+    .detail-box-input .box-infor {
+       margin: 0;
+        
+    }
+
+    .detail-box-input .box-mes {
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .detail-box-input .box-infor {
+        border-radius: 0;
+        
+    }
+
+    .detail-box-input .box-mes {
+        margin-top: 20px;
+        border-radius: 0;
+    }
+}
+
+
+
+

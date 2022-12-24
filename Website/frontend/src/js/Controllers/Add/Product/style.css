@@ -1,0 +1,203 @@
+/* .flex {
+    display: flex;
+}
+
+.flex-from {
+    display: flex;
+}
+
+.from-pd-img {
+    width: 45%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.from-pd-img span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333366;
+}
+
+.from-pd-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.from-pd-input {
+    width: 100%;
+    padding: 30px;
+}
+
+.from-pd-input .box-pd-input .error {
+    background-color: #FF4A4A;
+}
+
+.from-pd-input .box-pd-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.from-pd-input .box-pd-input input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3f3f3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.from-pd-input .box-pd-input .text-are {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.from-pd-input .box-pd-input-dou {
+    display: flex;
+    width: 100%;
+}
+
+.from-pd-input .box-pd-input-dou div{
+    width: 100%;
+   
+}
+
+.from-pd-input .box-pd-input-dou .input-mr{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.from-pd-input .box-pd-input-dou .input-mr input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.from-pd-input .box-pd-input-dou .input-non-mr{
+    width: 100%;
+}
+
+.from-pd-input .box-pd-input-dou .input-non-mr input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown .drop-toggle {
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: 0;
+    text-align: left;
+    color: #4b4b4b;
+   
+}
+
+.dropdown .drop-toggle::after {
+    float: right;
+    margin-top: 10px;
+}
+
+.dropdown .drop-menu {
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 5px;
+    border: 0;
+    box-shadow: 0 0 4px 0 #c4c4c4;
+}
+
+.ant-input:focus, .ant-input-focused {
+    box-shadow: 0 0 4px 0 #c4c4c4;
+}
+
+.btn-primary {
+    --bs-btn-active-bg: #333366;
+}
+
+.btn-add {
+    background-color: #333366;
+    border: 0;
+    --bs-btn-active-bg: #FCCB06;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: #FCCB06;
+    color: #4b4b4b;
+}
+
+.btn-add:disabled {
+    background-color: #b3b3b3;
+}
+
+.alert-button {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #FF4A4A;
+}
+
+.alert-input {
+    margin-left: 10px;
+    color: #FF4A4A;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .flex {
+        display: unset;
+    }
+
+    .from-pd-img {
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .from-pd-img img{
+       width: 250px;
+       height: 250px;
+    }
+
+} */
+
+/* @media screen and (max-width: 700px) {
+    .flex-from {
+        display: unset;
+    }
+
+    .from-pd-img {
+        width: 100%;
+    }
+
+    .from-pd-img {
+        padding-right: 20px;
+    }
+    .from-pd-img img{
+        width: 100%;
+        height: auto;
+     }
+}
+ */
